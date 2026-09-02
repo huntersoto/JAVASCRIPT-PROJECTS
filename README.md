@@ -1,2 +1,2 @@
 # JAVASCRIPT-PROJECTS
-Repository for Tech Academy JavaScript Projects
+Repository to house JavaScript Projects for the Tech Academy
