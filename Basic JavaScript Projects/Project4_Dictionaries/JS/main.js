@@ -39,17 +39,17 @@ const test = {
         Three: "Dare you to click the other button..."
 };
 
-//First function -- does not delete any variables in the dictionary -- changes button text depending on if the variable test.Three still exists in the dictionary
+//First function -- does not delete any key-value pair(s) in the dictionary -- changes button text depending on if the key-value test.Three still exists in the dictionary
 function TestFunction() {
     if ("Three" in test) {
-        document.getElementById("beforeDelete").innerHTML = test.Three; //Button text if the button is clicked and the variable still exists
+        document.getElementById("beforeDelete").innerHTML = test.Three; //Button text if the button is clicked and the key-value still exists
     } else {
-        document.getElementById("beforeDelete").innerHTML = "Womp...womp..."; //Button text if the button is clicked and the variable no longer exists
+        document.getElementById("beforeDelete").innerHTML = "Womp...womp..."; //Button text if the button is clicked and the key-value no longer exists
     }
 }
 
-//Second function -- deletes a variable from the dictionary and changes the button text
+//Second function -- deletes a key-value pair from the dictionary and changes the button text
 function deleteTestFunction() {
     delete test.Three;
-    document.getElementById("afterDelete").innerHTML = "Bye..Bye..Variable -- Now click the first button";
+    document.getElementById("afterDelete").innerHTML = "Something happened -- Try clicking the first button";
 }
