@@ -8,7 +8,6 @@ const petSounds = {
         bird: "Chirp!",
         snake: "Hiss!",
         fish: "Blub blub...",
-        deleteMe: "words to be deleted"
 };
 
 //Function to react to the pet type a user entered
