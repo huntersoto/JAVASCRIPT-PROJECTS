@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="JS/main.js"></script>
+</head>
+
+<body>
+    <div>
+        <h3>What kind of pet do you have?</h3>
+        <!--Input Field-->
+        <input id="petInput" type="text" placeholder="Enter your pet type (dog, cat, etc)" style="width: 155px; margin-bottom: 5px;">
+        <br>
+        <!--Submit Button-->
+        <button onclick="handlePet()">Submit</button>
+        <!--Reaction-->
+        <p id="reaction" style="font-style: italic; font-weight: bold;"></p>
+        <br>
+        <br>
+        <br>
+    </div>
+    <div>
+        <h3>Moving on from pets...time to delete stuff from a dictionary</h3>
+        <h4>Before Delete</h4>
+        <button onclick="TestFunction()" id="beforeDelete">Dictionary delete test button #1!</button>
+        <h4>After Delete</h4>
+        <button onclick="deleteTestFunction()" id="afterDelete">Dictionary delete test button #2!</button>
+    </div>
+</body>
+
+</html>
