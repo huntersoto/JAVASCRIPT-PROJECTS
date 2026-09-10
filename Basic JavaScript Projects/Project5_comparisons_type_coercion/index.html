@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="JS/main.js" defer></script>
+    <!--Added "defer" to this. Was having issues getting the output to actually display in the browser. Found adding this was the only solution unless I wanted to move the script element out of the head and into the body below the outputs-->
+</head>
+
+<body>
+    <h2>JavaScript Assignments:</h2>
+    <div id="output"></div>
+    <div>
+    <!-- commenting out p elemnts used to test each separate function
+        <p id="Test0" onclick="my_function0()">Click Here! -- 0/0 Test</p>
+        <p id="Test1" onclick="my_function1()">Click Here! -- String test</p>
+        <p id="Test2" onclick="my_function2()">Click Here! -- 007 test</p>
+        <p id="Test3" onclick="my_function3()">Click Here! -- decimal test</p>
+    -->
+        <!--HTML for experimenting with a consolidated function-->
+        <p id="Test0" onclick="runTest('0/0')">Click Here! -- 0/0 Test</p>
+        <p id="Test1" onclick="runTest('string')">Click Here! -- String test</p>
+        <p id="Test2" onclick="runTest('007')">Click Here! -- 007 test</p>
+        <p id="Test3" onclick="runTest('decimal')">Click Here! -- decimal test</p>
+    </div>
+</body>
+
+</html>
