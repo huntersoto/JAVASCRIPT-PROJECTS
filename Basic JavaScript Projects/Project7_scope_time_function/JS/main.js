@@ -71,10 +71,10 @@ function Age_Function() {
 function Time_function() {
     var Time = new Date().getHours(); // establishing the time varibale using the getHours() method
     var Reply; // establishing the Reply variable that will be used as the display value based on whichever statement is true from the if, else if, or else statements
-    if (Time < 12 == Time > 0) {
+    if (Time < 12 && Time > 0) {
         Reply = "It is morning time!";
     }
-    else if (Time >= 12 == Time < 18) {
+    else if (Time >= 12 && Time < 18) {
         Reply = "It is afternoon!";
     }
     else {
