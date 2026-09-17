@@ -1,4 +1,4 @@
-/*
+
 // countdown timer
 function countdown() {
     var seconds = document.getElementById("seconds").value; // Get the value of the input field with id "seconds"
@@ -15,7 +15,7 @@ function countdown() {
     }
     tick() // Call the tick function to start the countdown
 }
-*/
+
 /*
 // normal slideshow JS from W3Schools.com
 let slideIndex = 1;
