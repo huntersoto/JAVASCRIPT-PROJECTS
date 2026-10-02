@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hunter Soto - My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="My portfolio one page website">
+    <script src="JS/one_page_website.js" defer></script>
+    <link href="css/one_page_website.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav>
+        <ul>
+            <a href="#aboutme">
+                <li>About Me</li>
+            </a>
+            <a href="#images">
+                <li>Images</li>
+            </a>
+            <a href="#videos">
+                <li>Vidoes</li>
+            </a>
+            <a href="#contact">
+                <li>Contact Me</li>
+            </a>
+        </ul>
+    </nav>
+    <!--HEADER-->
+    <header>
+        <div>
+            <h1>Welcome to my Portfolio!</h1>
+        </div>
+    </header>
+    <section id="aboutme">
+        <div>
+            <h2>About me</h2>
+            <p>Filler text</p>
+        </div>
+    </section>
+    <!--IMAGES-->
+    <section id="images">
+        <!-- Images used to open the lightbox -->
+        <div class="row">
+            <div class="column">
+                <img src="Images/image1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="Images/image2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="Images/image3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="Images/image4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="Images/image5.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="Images/image6.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="Images/OG/image1.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="Images/OG/image2.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="Images/OG/image3.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="Images/OG/image4.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="Images/OG/image5.png" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="Images/OG/image6.png" style="width:100%">
+                </div>
+
+                <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Caption text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail image controls -->
+                <div class="column">
+                    <img class="thumbnail" src="Images/thumbnail/thumbnail1.png" onclick="currentSlide(1)" alt="python code">
+                </div>
+
+                <div class="column">
+                    <img class="thumbnail" src="Images/thumbnail/thumbnail2.png" onclick="currentSlide(2)" alt="Python Logo">
+                </div>
+
+                <div class="column">
+                    <img class="thumbnail" src="Images/thumbnail/thumbnail3.png" onclick="currentSlide(3)" alt="JavaScript Code">
+                </div>
+
+                <div class="column">
+                    <img class="thumbnail" src="Images/thumbnail/thumbnail4.png" onclick="currentSlide(4)" alt="PhP code">
+                </div>
+
+                <div class="column">
+                    <img class="thumbnail" src="Images/thumbnail/thumbnail5.png" onclick="currentSlide(5)" alt="HTML">
+                </div>
+
+                <div class="column">
+                    <img class="thumbnail" src="Images/thumbnail/thumbnail6.png" onclick="currentSlide(6)" alt="Laptop on desk with PHP code displayed">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--VIDEOS-->
+    <section id="videos">
+        <div>
+            <h2>Video section placeholder heading</h2>
+            <!--VIDEO PLACEHOLDER-->
+            <div id="video">
+                <h3>Video1 placeholder heading</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SWHfcJpByF4"
+                    alt="Placeholder video of coding"></iframe>
+            </div>
+        </div>
+    </section>
+    <!--CONTACT ME FORM-->
+    <section>
+        <div id="contact">
+            <h2>Contact me!</h2>
+            <h3>You can contact me using the contact information at the bottom of the page, or you can provide your
+                contact information and a short message and I will contact you as soon as I can!
+            </h3>
+            <div>
+                <form>
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name"><br>
+                    <input type="email" placeholder="Email">
+                    <input type="tel" placeholder="Phone Number"><br>
+                    <textarea placeholder="Type your message here..."></textarea><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--FOOTER-->
+    <footer>
+        <table>
+            <tr>
+                <td>
+                    <p>Hunter Soto</p>
+                </td>
+                <td>
+                    <p>Github: https://github.com/huntersoto</p>
+                </td>
+                <td>
+                    <p>Email Address: hunter.soto@outlook.com</p>
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+
+</html>
