@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html>
+
+    <!-- HEAD SECTION: Empty on purpose — this page is never loaded directly
+         in the browser, so it needs no title or stylesheet of its own -->
     <head></head>
+
+    <!-- BODY SECTION: This is the content that the AJAX request in getMsg()
+         fetches and injects into the "content" div on ajax_basics.html.
+         The empty paragraph with id="tkuMsg" acts as a placeholder — once
+         this HTML is loaded onto the page, the script fills it with the
+         personalized thank-you message using the name the user typed in -->
     <body>
         <p id="tkuMsg"></p>
     </body>
+
 </html>
