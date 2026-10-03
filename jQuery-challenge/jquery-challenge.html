@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<!-- HEAD: page metadata (character encoding, browser tab title) and CSS styles -->
+<head>
+  <meta charset="utf-8">
+  <title>jQuery Challenge</title>
+  <!-- STYLE: basic page styling — centers the content, styles the buttons,
+       and gives the toggle box its yellow background and rounded corners -->
+  <style>
+    body { font-family: sans-serif; max-width: 600px; margin: 40px auto; padding: 0 16px; }
+    button { padding: 8px 16px; margin-right: 8px; cursor: pointer; }
+    #log { margin-top: 12px; color: #555; }
+    #box { margin-top: 20px; padding: 20px; background: #f0b429; border-radius: 6px; }
+  </style>
+</head>
+<!-- BODY: the visible page content -->
+<body>
+  <h1>jQuery Challenge</h1>
+
+  <!-- SECTION 1 (HTML): a button and a paragraph. The paragraph (#log)
+       gets updated by jQuery each time the button (#clickMe) is clicked -->
+  <h2>1. Event: click (via .on())</h2>
+  <button id="clickMe">Click me</button>
+  <p id="log">Not clicked yet.</p>
+
+  <!-- SECTION 2 (HTML): a button and a box. Clicking the button (#toggleBox)
+       makes the box (#box) slide open/closed via jQuery's slideToggle effect -->
+  <h2>2. Effect: .slideToggle()</h2>
+  <button id="toggleBox">Toggle the box</button>
+  <div id="box">Hello! I slide up and down with jQuery.</div>
+
+  <!-- SCRIPT: load the jQuery library from a CDN (must come before our own code) -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script>
+    // Wait until the page's HTML is fully loaded before running any jQuery code
+    $(document).ready(function () {
+      // 1. Event — from "Event Basics": bind a click handler with .on()
+      // Keeps a running count and writes it into the #log paragraph on each click
+      var count = 0;
+      $("#clickMe").on("click", function () {
+        count++;
+        $("#log").text("Button clicked " + count + " time(s).");
+      });
+
+      // 2. Effect — from "Introduction to Effects": .slideToggle() with a duration
+      // Each click slides the box open or closed over 400 milliseconds
+      $("#toggleBox").on("click", function () {
+        $("#box").slideToggle(400);
+      });
+    });
+  </script>
+</body>
+</html>
