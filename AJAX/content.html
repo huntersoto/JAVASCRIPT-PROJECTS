@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- HEAD SECTION: Contains metadata about the page (character encoding and title)
+     and links the external stylesheet used to style the page -->
 <head>
 	<meta charset="utf-8">
 	<title>AJAX Content</title>
@@ -9,12 +11,20 @@
 </head>
 
 <body>
-    
-	<div id="demo">
+
+	<!-- DEMO CONTAINER: Holds the placeholder heading and the button.
+	     The id="change" is the target of the AJAX request — when the button
+	     is clicked, loadDoc() fetches ajax_info.txt from the server and
+	     replaces everything inside this div with the file's contents -->
+	<div id="change">
 		<h2>Let AJAX change this text</h2>
 		<button type="button" onclick="loadDoc()">Change Content</button>
 	</div>
 
+	<!-- SCRIPT SECTION: Loads the external JavaScript file containing the
+	     loadDoc() function that creates and sends the XMLHttpRequest.
+	     Placed at the end of the body so the HTML elements above exist
+	     before the script runs -->
 	<script src="ajaxScript.js"></script>
 </body>
 

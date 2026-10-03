@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- HEAD SECTION: Contains metadata about the page (character encoding and title)
+     and links the external stylesheet used to style the form -->
 <head>
 	<meta charset="utf-8">
 	<title>Basic AJAX Demo</title>
@@ -10,8 +12,17 @@
 
 <body>
 
+	<!-- CONTENT CONTAINER: Wraps the entire newsletter sign-up section.
+	     The id="content" is the target of the AJAX request — once the request
+	     succeeds, the JavaScript replaces everything inside this div with the
+	     contents of response.html -->
 	<div class='container' id="content">
 		<h1>Sign up for our Newsletter</h1>
+
+		<!-- SIGN-UP FORM: Collects the user's name and email.
+		     The name input (id="fullName") is read by the script so the
+		     response page can thank the user by name. The Submit button
+		     triggers the getMsg() function, which sends the AJAX request -->
 		<div class="display">
 			<form>
 				<input id="fullName" placeholder="Name">
@@ -20,7 +31,11 @@
 			</form>
 		</div>
 	</div>
-	
+
+	<!-- SCRIPT SECTION: Loads the external JavaScript file containing the
+	     getMsg() function that creates and sends the XMLHttpRequest.
+	     Placed at the end of the body so the HTML elements above exist
+	     before the script runs -->
 	<script src="ajaxScript.js"></script>
 </body>
 
