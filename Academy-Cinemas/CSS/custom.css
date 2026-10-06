@@ -34,7 +34,7 @@ body{
 }
 
 /*SHRINK ON SCROLL NAVBAR*/
-.navbar.shrink{
+.navbar-shrink{
     height: 80px;
     transition: height 0.5s ease;
 }
